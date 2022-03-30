@@ -1,0 +1,7 @@
+<app-add-movie (onAddMovie)="addMovie($event)"></app-add-movie>
+<app-movie
+    *ngFor="let movie of movies"
+    [movie]="movie"
+    (onDeleteMovie)="deleteMovie(movie)"
+    (onToggleCheck)="toggleCheck(movie)"
+></app-movie>

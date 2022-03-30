@@ -1,0 +1,11 @@
+<a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+  Seen Movies Background
+  <i nz-icon nzType="down"></i>
+</a>
+<nz-dropdown-menu #menu="nzDropdownMenu">
+  <ul nz-menu>
+    <li nz-menu-item (click)="setColor('light')" class="menu-item light">Light</li>
+    <li nz-menu-item (click)="setColor('regular')" class="menu-item regular">Regular</li>
+    <li nz-menu-item (click)="setColor('dark')" class="menu-item dark">Dark</li>
+  </ul>
+</nz-dropdown-menu>

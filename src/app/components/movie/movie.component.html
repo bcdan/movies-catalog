@@ -1,0 +1,16 @@
+<div class="movie" [ngClass]=" movie.seen ? colorStyle : 'default' ">
+  <nz-card nzTitle={{movie.name}} [nzExtra]="extraDetails">
+    IMDB: <a>{{movie.imdbLink}}</a>
+
+  </nz-card>
+  <ng-template #extraDetails>
+    <label nz-checkbox [(ngModel)]="movie.seen" (ngModelChange)="onToggle(movie)">Seen</label>
+
+    <i
+      (click)="onDelete(movie)"
+      nz-icon nzType="delete"
+      nzTheme="fill" ></i>
+
+  </ng-template>
+</div>
+

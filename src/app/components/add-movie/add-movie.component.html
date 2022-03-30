@@ -1,0 +1,19 @@
+<form nz-form [nzLayout]="'inline'" *ngIf="showAddMovie" class="add-form" (ngSubmit)="onSubmit()">
+    <nz-form-item>
+        <nz-form-control nzErrorTip="Please enter a movie name">
+                <input type="text" name="name" id="name" [(ngModel)] ="name" nz-input placeholder="Add Movie">
+        </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+        <nz-form-control>
+            <input type="text" name="imdb-link" id="imdb-link" [(ngModel)] ="imdbLink" placeholder="IMDB Link">
+        </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+        <nz-form-control>
+          <button nz-button nzType="primary">Save Movie</button>
+        </nz-form-control>
+      </nz-form-item>
+</form>

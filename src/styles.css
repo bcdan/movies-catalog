@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid rgb(41, 41, 41);
+  padding: 30px;
+  border-radius: 5px;
+}
+.movie.default{
+  background-color:gainsboro;
+}
+.menu-item.light:hover,
+.movie.light{
+  background-color:lavender;
+}
+.menu-item.regular:hover,
+.movie.regular{
+  background-color:lightseagreen;
+}
+.menu-item.dark:hover,
+.movie.dark,
+.movie.dark h3
+{
+  background-color:#000066;
+  color:white;
+}
+.anticon-delete{
+  cursor: pointer;
+}
